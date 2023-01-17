@@ -1,0 +1,162 @@
+.container {
+  background-color: rgb(245, 228, 243);
+  display: flex;
+  flex-direction: column;
+  &-header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 68px;
+    border: 6px solid ghostwhite;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    margin-bottom: 190px;
+    &__title {
+      display: flex;
+      flex-direction: row;
+      margin-left: 112px;
+      color: palevioletred;
+      padding: 4px;
+      &-icon {
+        //margin-left: 4px;
+        padding-bottom: 100px;
+      }
+    }
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      margin-left: 5%;
+      place-content: stretch space-between;
+      align-items: stretch;
+      width: 300px;
+      padding: 6px;
+      //font-family: "Helvetica Neue";
+    }
+    &__btn {
+      margin-left: 20%;
+      margin-right: 128px;
+      display: flex;
+      flex-direction: row;
+      place-content: stretch space-between;
+      width: 300px;
+      padding: 6px;
+
+    }
+  }
+  &-home-container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+    &__detail {
+      margin-bottom: 300px;
+      width: 240px;
+      height: 138px;
+      font-weight: 700;
+      margin-left: 112px;
+
+      &__searchbar {
+        border: 1px solid red;
+      }
+    }
+
+  }
+  &-apartment-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    &__symbol {
+      flex-direction: column;
+      place-content: center space-between;
+      align-items: center;
+      &-icon {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        margin-left: 45%;
+        color: palevioletred;
+        &-home {
+          margin-bottom: 20px;
+        }
+      }
+      &-title {
+        margin-left: 40%;
+      }
+    }
+  }
+  &-card {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    &__row {
+      display: flex;
+      flex-direction: row;
+      place-content: center space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      &-content {
+        flex-direction: row;
+        margin-left: 24px;
+        &-detail {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          &-icon {
+          }
+        }
+      }
+    }
+  }
+}
+img {
+  width: 350px;
+  height: 148px;
+  position: relative;
+}
+
+
+.example-card {
+  margin-left: 116px;
+}
+.img-card {
+  margin-right: 116px;
+}
+
+.my-search {
+  background-color: #D7385E;
+  cursor: pointer;
+  color: white;
+}
+
+.my-place {
+  color: #D7385E;
+}
+
+.container-card__row-content-bookmark {
+  margin-left: 4px;
+}
+.container-card__row-content-detail-description {
+  margin-left: 16px;
+}
+
+.container-home-container__button {
+  margin-left: 50%;
+}
+
+.example-card__price {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 16px;
+  background-color: lightskyblue;
+  width: 35%;
+  height: 42px;
+}
+
+.example-card__price-Nu {
+  margin-left: 8px;
+  padding: 2px;
+}
+
+.container-card__row-content-detail-icon {
+  margin-bottom: -6px;
+}
