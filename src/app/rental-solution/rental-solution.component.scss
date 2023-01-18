@@ -1,0 +1,105 @@
+.rental-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.rental-container__header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 45%;
+}
+
+.rental-container__property-detail-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-container__property-detail-titleColor {
+  color: #D7385E;
+  margin-left: 8px;
+}
+
+.rental-container__header-icon {
+  color: #D7385E;
+  margin-left: 40px;
+  margin-top: 8%;
+}
+
+.rental-container__property {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 95px;
+}
+
+.rental-container__property-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 116px;
+}
+
+.rental-container__property-detail--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rental-container__property-detail--content:hover {
+  background-color: #FFBABA;
+}
+
+.rental-container__property-detail--content-title {
+  margin-left: 16px;
+}
+.rental-container__property-detail--content-title:hover {
+  color: #D7385E;
+}
+
+.rental-container__property-detail--content-icon:hover {
+  color: #D7385E;
+}
+
+.rental-container__property-img--img {
+  height: 300px;
+  margin-right: 116px;
+}
+
+.rental-container__manager {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rental-container__manager-detail-img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 116px;
+}
+
+.rental-container__manager-detail {
+  display: flex;
+  flex-direction: column;
+  margin-right: 250px;
+}
+
+.rental-container__manager-detail--content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rental-container__manager-detail--content:hover {
+  background-color: #FFBABA;
+}
+
+.rental-container__manager-detail--content-title {
+  margin-left: 16px;
+}
+.rental-container__manager-detail--content-title:hover {
+  color: #D7385E;
+}
+
+.rental-container__manager-detail--content-icon:hover {
+  color: #D7385E;
+}

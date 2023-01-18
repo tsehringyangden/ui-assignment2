@@ -1,5 +1,7 @@
 .container {
-  background-color: rgb(245, 228, 243);
+  //background-image: url('/assets/images/animation.jpg');
+  //background-color: rgb(245, 228, 243);
+  background-origin: unset;
   display: flex;
   flex-direction: column;
   &-header-container {
@@ -10,16 +12,15 @@
     border: 6px solid ghostwhite;
     box-sizing: border-box;
     background-color: whitesmoke;
-    margin-bottom: 190px;
     &__title {
+      align-items: center;
       display: flex;
       flex-direction: row;
-      margin-left: 112px;
       color: palevioletred;
       padding: 4px;
-      &-icon {
-        //margin-left: 4px;
-        padding-bottom: 100px;
+      margin-left: 50px;
+      &-topic {
+        margin-left: 8px;
       }
     }
     &__menu {
@@ -32,8 +33,6 @@
       padding: 6px;
     }
     &__btn {
-      margin-left: 20%;
-      margin-right: 128px;
       display: flex;
       flex-direction: row;
       place-content: stretch space-between;
@@ -43,16 +42,17 @@
     }
   }
   &-home-container {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
+    background-image: url('/assets/images/animation.jpg');
+    height: 560px;
 
     &__detail {
-      margin-bottom: 300px;
-      width: 240px;
-      height: 138px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 500px;
+      height: 560px;
       font-weight: 700;
-      margin-left: 112px;
+      padding: 60px;
 
       &__searchbar {
         border: 1px solid red;
@@ -139,7 +139,7 @@ img {
 }
 
 .container-home-container__button {
-  margin-left: 50%;
+  margin-left: 45%;
 }
 
 .example-card__price {
@@ -158,4 +158,21 @@ img {
 
 .container-card__row-content-detail-icon {
   margin-bottom: -6px;
+}
+.hii {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-cursor {
+  cursor: pointer;
+}
+.font {
+  font-size: 40px;
+}
+
+.mat-mdc-form-field {
+  width: 500px;
 }
