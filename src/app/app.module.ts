@@ -11,12 +11,14 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { RentalSolutionComponent } from './rental-solution/rental-solution.component';
+import { ChooseUsComponent } from './choose-us/choose-us.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewRentalsComponent,
-    RentalSolutionComponent
+    RentalSolutionComponent,
+    ChooseUsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,124 @@
+.rental-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.rental-container__header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 38%;
+}
+
+.rental-container__header-icon {
+  color: #D7385E;
+  margin-left: 12%;
+  margin-top: 8%;
+}
+
+.rental-container__rental {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-container__rental-provider {
+  display: flex;
+  flex-direction: column;
+  margin-left: 113px;
+  border: 2px solid rgb(245, 247, 246);
+}
+.rental-container__rental-provider-topic {
+  background-color: #D4F1F4;
+  width: 98%;
+  height: 16%;
+  padding-bottom: 8px;
+}
+
+.rental-container__rental-provider {
+  display: flex;
+  flex-direction: column;
+  margin-left: 113px;
+}
+
+.rental-container__rental-provider-title {
+  font-size: 20px;
+  margin-left: 28px;
+}
+
+.rental-container__rental-provider-container {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+}
+
+.rental-container__rental-provider-container-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rental-container__rental-provider-container-detail--icon {
+  color: #D7385E;
+}
+
+.rental-container__rental-provider-container-detail--position {
+  margin-left: 8px;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rental-container__rental-provider-container-detail--description {
+  margin-left: 30px;
+}
+
+.rental-container__rental-new {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #D7385E;
+  width: 38%;
+}
+.rental-container__rental-new-topic {
+  background-color: #D7385E;
+  height: 16%;
+  padding-bottom: 8px;
+}
+
+.rental-container__rental-new-provider-title {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-left: 28px;
+}
+
+.rental-container__rental-new-provider-container {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+}
+
+.rental-container__rental-new-provider-container-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rental-container__rental-new-provider-container-detail--icon {
+  color: #D7385E;
+}
+
+.rental-container__rental-new-provider-container-detail--position {
+  margin-left: 8px;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rental-container__rental-new-provider-container-detail--description {
+  margin-left: 30px;
+}
+
+.bg-color {
+  background-color: #D4F1F4;
+  width: 98%;
+  padding-bottom: 8px;
+}
