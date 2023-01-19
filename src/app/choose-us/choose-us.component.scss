@@ -7,13 +7,17 @@
 .rental-container__header {
   display: flex;
   flex-direction: column;
-  margin-left: 38%;
+  margin-left: 28%;
 }
 
 .rental-container__header-icon {
   color: #D7385E;
-  margin-left: 12%;
+  margin-left: 22%;
   margin-top: 8%;
+}
+
+.rental-container__header-text {
+  font-size: 48px;
 }
 
 .rental-container__rental {

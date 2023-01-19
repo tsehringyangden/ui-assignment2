@@ -9,6 +9,12 @@
   flex-direction: column;
   margin-left: 38%;
 }
+.rental-container__header-icon {
+  margin-left: 50%;
+}
+.rental-container__header-title {
+  font-size: 48px;
+}
 
 .rental-container__property-detail-title {
   display: flex;
@@ -22,7 +28,7 @@
 
 .rental-container__header-icon {
   color: #D7385E;
-  margin-left: 40px;
+  margin-left: 10%;
   margin-top: 8%;
 }
 
@@ -30,7 +36,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 95px;
 }
 
 .rental-container__property-detail {

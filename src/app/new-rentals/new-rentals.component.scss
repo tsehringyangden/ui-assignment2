@@ -66,13 +66,12 @@
     flex-direction: column;
     &__symbol {
       flex-direction: column;
-      place-content: center space-between;
-      align-items: center;
+      margin-left: -10%;
       &-icon {
         display: flex;
         flex-direction: row;
         width: 300px;
-        margin-left: 45%;
+        margin-left: 50%;
         color: palevioletred;
         &-home {
           margin-bottom: 20px;
@@ -80,6 +79,8 @@
       }
       &-title {
         margin-left: 40%;
+        font-size: 48px;
+        margin-top: 0;
       }
     }
   }
