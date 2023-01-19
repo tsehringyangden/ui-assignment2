@@ -12,13 +12,15 @@ import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
 import { RentalSolutionComponent } from './rental-solution/rental-solution.component';
 import { ChooseUsComponent } from './choose-us/choose-us.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewRentalsComponent,
     RentalSolutionComponent,
-    ChooseUsComponent
+    ChooseUsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,
