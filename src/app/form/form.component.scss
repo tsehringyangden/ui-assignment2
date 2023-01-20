@@ -92,20 +92,18 @@
 .profile-container__form {
   display: flex;
   flex-direction: row;
-  margin-left: 112px;
-  margin-top: 24px;
-  width: 100%;
+  margin: 24px 60px;
+  padding: 0 60px;
+  justify-content: space-evenly;
 }
 
 .profile-container__form-fill {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-}
-
-.profile-container__form-img {
-  //height: 40%;
-  width: 36%;
+  width: 30%;
 }
 
 
+.image {
+  width: 60%;
+}

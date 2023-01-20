@@ -13,7 +13,6 @@ import {MatMenuModule} from '@angular/material/menu';
 import { RentalSolutionComponent } from './rental-solution/rental-solution.component';
 import { ChooseUsComponent } from './choose-us/choose-us.component';
 import { FaqComponent } from './faq/faq.component';
-import { ContactComponent } from './contact/contact.component';
 import { FormComponent } from './form/form.component';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { FormComponent } from './form/form.component';
     RentalSolutionComponent,
     ChooseUsComponent,
     FaqComponent,
-    ContactComponent,
     FormComponent
   ],
   imports: [
