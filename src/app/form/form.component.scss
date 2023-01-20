@@ -72,11 +72,29 @@
   width: 68%;
 }
 
+.profile-container__header-img-circle {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+  margin-top: 60px;
+
+}
+
+.profile-container__header-img-circle--one {
+  margin-left: 62%;
+}
+
+.profile-container__header-img-circle--two {
+  width: 60px;
+
+}
+
 .profile-container__form {
   display: flex;
   flex-direction: row;
   margin-left: 112px;
   margin-top: 24px;
+  width: 100%;
 }
 
 .profile-container__form-fill {
@@ -86,5 +104,8 @@
 }
 
 .profile-container__form-img {
-  height: 40%;
+  //height: 40%;
+  width: 36%;
 }
+
+
