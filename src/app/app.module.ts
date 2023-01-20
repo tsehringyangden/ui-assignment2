@@ -14,6 +14,7 @@ import { RentalSolutionComponent } from './rental-solution/rental-solution.compo
 import { ChooseUsComponent } from './choose-us/choose-us.component';
 import { FaqComponent } from './faq/faq.component';
 import { FormComponent } from './form/form.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormComponent } from './form/form.component';
     RentalSolutionComponent,
     ChooseUsComponent,
     FaqComponent,
-    FormComponent
+    FormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
