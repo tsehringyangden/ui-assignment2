@@ -1,6 +1,4 @@
 .container {
-  //background-image: url('/assets/images/animation.jpg');
-  //background-color: rgb(245, 228, 243);
   background-origin: unset;
   display: flex;
   flex-direction: column;
@@ -11,19 +9,20 @@
     height: 68px;
     border: 6px solid ghostwhite;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    background-color: lightgrey;
+    padding: 0 60px;
+    border-radius: 10px;
     &__title {
       align-items: center;
       display: flex;
       flex-direction: row;
       color: palevioletred;
       padding: 4px;
-      margin-left: 50px;
       &-topic {
         margin-left: 8px;
       }
     }
-    &__menu {
+    &__menu-list {
       display: flex;
       flex-direction: row;
       margin-left: 5%;
@@ -38,21 +37,21 @@
       place-content: stretch space-between;
       width: 300px;
       padding: 6px;
+      align-items: center;
 
     }
   }
   &-home-container {
-    background-image: url('/assets/images/animation.jpg');
-    height: 560px;
+    background-image: url('/assets/images/car.png');
+    height: 450px;
 
     &__detail {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 500px;
-      height: 560px;
+      width: 38%;
       font-weight: 700;
-      padding: 60px;
+      padding: 0 60px;
 
       &__searchbar {
         border: 1px solid red;
@@ -70,7 +69,6 @@
       &-icon {
         display: flex;
         flex-direction: row;
-        width: 300px;
         margin-left: 50%;
         color: palevioletred;
         &-home {
@@ -109,7 +107,7 @@
   }
 }
 img {
-  width: 350px;
+  width: 100%;
   height: 148px;
   position: relative;
 }
@@ -152,15 +150,10 @@ img {
   height: 42px;
 }
 
-.example-card__price-Nu {
-  margin-left: 8px;
-  padding: 2px;
-}
-
 .container-card__row-content-detail-icon {
   margin-bottom: -6px;
 }
-.hii {
+.container-header-container__menu {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -176,4 +169,11 @@ img {
 
 .mat-mdc-form-field {
   width: 500px;
+}
+
+.footer-container__header-topic-img {
+  width: 38px;
+  height: 38px;
+  color: #D7385E;
+
 }

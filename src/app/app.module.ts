@@ -15,6 +15,7 @@ import { ChooseUsComponent } from './choose-us/choose-us.component';
 import { FaqComponent } from './faq/faq.component';
 import { FormComponent } from './form/form.component';
 import { FooterComponent } from './footer/footer.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { FooterComponent } from './footer/footer.component';
     MatDividerModule,
     MatIconModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatInputModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
