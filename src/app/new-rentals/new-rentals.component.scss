@@ -55,6 +55,10 @@
 
       &__searchbar {
         border: 1px solid red;
+        @media screen and (max-width: 600px){
+          margin: 0 12px;
+          width: 24px;
+        }
       }
     }
 
@@ -69,7 +73,7 @@
       &-icon {
         display: flex;
         flex-direction: row;
-        margin-left: 50%;
+        margin-left: 48%;
         color: palevioletred;
         &-home {
           margin-bottom: 20px;
@@ -166,6 +170,9 @@ img {
 }
 .font {
   font-size: 40px;
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
 .mat-mdc-form-field {
@@ -176,5 +183,9 @@ img {
   width: 38px;
   height: 38px;
   color: #D7385E;
+}
 
+.rental__icon-size {
+  font-size: 45px;
+  padding: 16px;
 }

@@ -7,7 +7,7 @@
 .rental-container__header {
   display: flex;
   flex-direction: column;
-  margin-left: 40%;
+  margin-left: 36%;
 }
 .rental-container__header-icon {
   margin-left: 50%;
@@ -109,4 +109,9 @@
 
 .rental-container__manager-detail--content-icon:hover {
   color: #D7385E;
+}
+
+.rental__icon-size {
+  font-size: 45px;
+  padding: 16px;
 }
