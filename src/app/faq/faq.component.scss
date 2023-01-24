@@ -19,17 +19,26 @@
   display: flex;
   flex-direction: column;
   margin-left: 26%;
+  @media screen and (max-width: 600px) {
+    margin-left: 10px;
+  }
 }
 
 .faq-container__header-title-icon {
   color: #D7385E;
   margin-left: 38%;
   margin-top: 8%;
+  @media screen and (max-width: 600px) {
+    margin-left: 32%;
+  }
 }
 
 .faq-container__header-title-topic {
   font-size: 48px;
   margin: 0;
+  @media screen and (max-width: 600px) {
+    //font-size: 2px;
+  }
 }
 
 .faq-container__header-image {
@@ -50,6 +59,10 @@
   margin-top: 56px;
   margin-left: 20%;
   margin-right: 20%;
+  @media screen and (max-width: 600px) {
+    margin-left: 4%;
+    margin-right: 2%;
+  }
 }
 
 .faq-container__content--question {
@@ -57,11 +70,18 @@
   flex-direction: row;
   border: 2px solid rgba(0,0,0,0.12);
   padding-left: 24px;
+  @media screen and (max-width: 600px) {
+    padding-left: 16px;
+  }
 }
 
 .faq-container__content--question-icon {
   margin-left: 40%;
   margin-top: 12px;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-right: 2px;
+  }
 }
 
 .faq-container__content--detail {
@@ -85,6 +105,9 @@
 .faq-container__content--detail-question-icon {
   margin-left: 47%;
   margin-top: 12px;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+  }
 }
 
 .faq-container__content--detail-question-answer {
@@ -100,23 +123,44 @@
 }
 .third-margin {
   margin-left: 66%;
+  @media screen and (max-width: 600px) {
+    margin-left: 84px;
+  }
 }
 .fourth-margin {
   margin-left: 62%;
+  @media screen and (max-width: 600px) {
+    margin-left: 54px;
+  }
 }
 .fifth-margin {
   margin-left: 58.4%;
+  @media screen and (max-width: 600px) {
+    margin-left: 30px;
+  }
 }
 .sixth-margin {
   margin-left: 28%;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-right: 12px;
+  }
 }
 .seventh-margin {
   margin-left: 47%;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    margin-right: 4px;
+  }
 }
 
 .rental__icon-size {
   font-size: 45px;
   padding: 16px;
+  @media screen and (max-width: 600px) {
+    font-size: 30px;
+    padding: 4px;
+  }
 }
 
 

@@ -8,6 +8,10 @@
 .profile-container__header {
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .profile-container__header--img {
   display: flex;
@@ -32,6 +36,9 @@
   flex-direction: column;
   margin-top: 36px;
   margin-left: 12%;
+  @media screen and (max-width: 600px) {
+    margin-left: 40px;
+  }
 }
 
 .profile-container__header--img-profile-name {
@@ -39,11 +46,18 @@
   color: #D7385E;
   font-size: 16px;
   margin-bottom: 0;
+  @media screen and (max-width: 600px) {
+    margin-left: 56px;
+  }
 }
+
 .profile-container__header--img-profile-designation {
   font-size: 14px;
   color: rgba(0,0,0,0.5);
   margin-top: 0;
+  @media screen and (max-width: 600px) {
+    margin-left: 40px;
+  }
 }
 
 .profile-container__header-topic {
@@ -51,6 +65,10 @@
   flex-direction: column;
   margin-left: 32px;
   width: 28%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-left: 2px;
+  }
 }
 
 .profile-container__header-topic-img {
@@ -64,12 +82,18 @@
   margin-bottom: 0;
   color: #D7385E;
   margin-top: 14px;
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+  }
 }
 
 .profile-container__header-topic-detail {
   font-size: 24px;
   margin-top: 0;
   width: 68%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .profile-container__header-img-circle {
@@ -77,15 +101,27 @@
   flex-direction: column;
   margin-left: 8%;
   margin-top: 60px;
+  @media screen and (max-width: 600px) {
+    margin-left: 34%;
+    margin-top: 8px;
+  }
 
 }
 
 .profile-container__header-img-circle--one {
   margin-left: 62%;
+  @media screen and (max-width: 600px) {
+    margin-left: 60px;
+    width: 32px;
+  }
 }
 
 .profile-container__header-img-circle--two {
   width: 60px;
+  @media screen and (max-width: 600px) {
+    margin-left: 0;
+    width: 60px;
+  }
 
 }
 
@@ -95,15 +131,34 @@
   margin: 24px 60px;
   padding: 0 60px;
   justify-content: space-evenly;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0 0 0;
+    padding:0 4px;
+  }
 }
 
 .profile-container__form-fill {
   display: flex;
   flex-direction: column;
   width: 30%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin-right: 4px;
+  }
 }
 
 
 .image {
   width: 60%;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.profile-image {
+  @media screen and (max-width: 600px) {
+    width: 62%;
+  }
 }
