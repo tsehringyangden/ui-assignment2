@@ -113,6 +113,7 @@
 .faq-container__content--detail-question-answer {
   margin-left: 24px;
   margin-right: 24px;
+  color: rgba(0,0,0,0.6);
 }
 
 
@@ -161,6 +162,10 @@
     font-size: 30px;
     padding: 4px;
   }
+}
+
+.faq-container__content--question-list {
+  color: rgba(0,0,0,0.87);
 }
 
 

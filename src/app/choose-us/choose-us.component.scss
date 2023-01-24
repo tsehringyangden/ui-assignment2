@@ -50,8 +50,7 @@
   }
 }
 .rental-container__rental-provider-topic {
-  background-color: #D4F1F4;
-  width: 100%;
+  background-color: #F5F5F5;
   height: 16%;
   padding-bottom: 8px;
 }
@@ -59,6 +58,7 @@
 .rental-container__rental-provider-title {
   font-size: 20px;
   margin-left: 28px;
+  color: rgba(0,0,0,1);
 }
 
 .rental-container__rental-provider-container {
@@ -85,10 +85,12 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
+  color: rgba(0,0,0,0.6);
 }
 
 .rental-container__rental-provider-container-detail--description {
   margin-left: 30px;
+  color: rgba(0,0,0,0.6);
 }
 
 .rental-container__rental-new {
@@ -133,14 +135,16 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
+  color: rgba(0,0,0,0.6);
 }
 
 .rental-container__rental-new-provider-container-detail--description {
   margin-left: 30px;
+  color: rgba(0,0,0,0.6);
 }
 
 .bg-color {
-  background-color: #D4F1F4;
+  background-color: #F5F5F5;
   width: 100%;
   padding-bottom: 8px;
 }

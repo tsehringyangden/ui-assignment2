@@ -15,6 +15,7 @@
 
 .rental-container__header-title {
   font-size: 48px;
+  color: rgba(0,0,0,0.87);
 }
 
 .rental-container__property-detail-title {
@@ -73,6 +74,7 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
+  color: rgba(0,0,0,0.64);
   @media screen and (max-width: 600px) {
     margin-left: 4px;
     font-size: 10px;
@@ -164,6 +166,7 @@
   font-weight: 400;
   margin-left: 16px;
   cursor: pointer;
+  color: rgba(0,0,0,0.64);
   @media screen and (max-width: 600px) {
     font-size: 10px;
     font-weight: 200;
