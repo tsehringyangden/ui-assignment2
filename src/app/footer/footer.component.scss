@@ -10,6 +10,9 @@
   justify-content: space-between;
   margin-top: 48px;
   padding: 0 60px;
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .footer-container__header-topic {
@@ -41,14 +44,20 @@
   font-weight: 400;
   margin-right: 40px;
   color: #D4F1F4;
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 18px;
+  }
 }
 button {
   background-color: #D4F1F4;
-  //border-radius: 10px;
+  @media screen and (max-width: 600px) {
+    margin-right: 4px;
+  }
 }
 
 .footer-container__first-line {
-  //margin-left: 24px;
   padding: 0 60px;
 }
 
@@ -57,6 +66,10 @@ button {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 48px;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer-container__content--about-us {
