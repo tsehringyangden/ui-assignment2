@@ -33,7 +33,6 @@
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    //margin-right: 24px;
     margin-left: 0;
   }
 }
@@ -46,7 +45,8 @@
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
-    margin-left: 8px;
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }
 .rental-container__rental-provider-topic {
@@ -99,7 +99,9 @@
   border: 2px solid #D7385E;
   width: 38%;
   @media screen and (max-width: 600px) {
-    width: 100%;
+    width: 92%;
+    margin-left: 14px;
+    margin-right: 14px;
   }
 }
 .rental-container__rental-new-topic {

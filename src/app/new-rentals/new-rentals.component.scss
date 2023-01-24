@@ -55,7 +55,7 @@
 
       &__searchbar {
         border: 1px solid red;
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 600px) {
           margin: 0 12px;
           width: 24px;
         }
@@ -164,7 +164,7 @@ img {
 .container-card__row-content-detail-description {
   margin-left: 16px;
   color: rgba(0,0,0,0.6);
-  padding: 6px 0;
+  //padding: 2px 0;
 }
 
 .container-home-container__button {
@@ -178,9 +178,9 @@ img {
   position: absolute;
   margin-top: 8px;
   margin-left: 16px;
-  background-color: lightskyblue;
+  background-color: #1DB2B6;
   width: 35%;
-  height: 42px;
+  height: 32px;
   border-radius: 5px;
   opacity: 0.65;
 }
@@ -194,6 +194,9 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
 
 .nav-cursor {
@@ -234,10 +237,15 @@ img {
 }
 
 .example-card__price-Nu {
-  color: rgba(1.0,1.0,1.0,1.0);
+  color: white;
+  margin-top: 8px;
 }
 
 .container-card__row-content-title {
   color: rgba(0,0,0,0.87);
 }
 
+button {
+  text-align: center;
+  margin-bottom: 4px;
+}
