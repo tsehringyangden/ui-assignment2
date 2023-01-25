@@ -9,37 +9,30 @@
       <h2 class="faq-container__header-title-topic">Frequently Asked Questions</h2>
     </div>
   </div>
-  <div class="faq-container__content">
-    <div class="faq-container__content--question">
-      <p class="faq-container__content--question-list">Can anybody without subscription plans list the property for rent?</p>
-      <mat-icon class="faq-container__content--question-icon">expand_more</mat-icon>
-    </div>
-    <div class="faq-container__content--detail">
-      <div class="faq-container__content--detail-question">
-        <p class="faq-container__content--detail-question-text">How will the rental management benefit the landlords?</p>
-        <mat-icon class="faq-container__content--detail-question-icon">expand_less</mat-icon>
-      </div>
-      <p class="faq-container__content--detail-question-answer">With the aid of crowdfunding websites, regular individuals can invest in startups. Startup investing platforms provide a selected list of businesses and startup ideas.</p>
-    </div>
-    <div class="faq-container__content--question content-margin">
-      <p class="faq-container__content--question-list">How can you screen your tenants?</p>
-      <mat-icon class="faq-container__content--question-icon third-margin">expand_more</mat-icon>
-    </div>
-    <div class="faq-container__content--question content-margin">
-      <p class="faq-container__content--question-list">How do I avoid scam or wrong listing?</p>
-      <mat-icon class="faq-container__content--question-icon fourth-margin">expand_more</mat-icon>
-    </div>
-    <div class="faq-container__content--question content-margin">
-      <p>How do I report the wrong location listing?</p>
-      <mat-icon class="faq-container__content--question-icon fifth-margin">expand_more</mat-icon>
-    </div>
-    <div class="faq-container__content--question content-margin">
-      <p>What are the main benefit of having subscription plants for rental management?</p>
-      <mat-icon class="faq-container__content--question-icon sixth-margin">expand_more</mat-icon>
-    </div>
-    <div class="faq-container__content--question content-margin">
-      <p class="faq-container__content--question-list">How do I purchase the rental management software plan?</p>
-      <mat-icon class="faq-container__content--question-icon seventh-margin">expand_more</mat-icon>
-    </div>
-  </div>
+  <cdk-accordion class="example-accordion">
+    <cdk-accordion-item
+      *ngFor="let item of items; let index = index;"
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+        [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded"
+        [attr.aria-controls]="'accordion-body-' + index">
+        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+          {{ item }}
+        <span class="example-accordion-item-description">
+          <mat-icon>{{ accordionItem.expanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+        </span>
+        </div>
+        <div
+          class="example-accordion-item-body example-accordion-answer"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index">
+          With the aid of crowdfunding websites, regular individuals can invest in startups. Startup investing platforms provide a selected list of businesses and startup ideas.
+        </div>
+    </cdk-accordion-item>
+  </cdk-accordion>
 </div>

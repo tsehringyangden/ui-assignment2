@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: column;
   margin-top: 64px;
-  margin-left: 14%;
   @media screen and (max-width: 600px) {
     margin-left: 18px;
+    margin-top: 0;
   }
 }
 
 .profile-container__header {
   display: flex;
   flex-direction: row;
+  margin-left: 14%;
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -19,7 +20,7 @@
 .profile-container__header--img {
   display: flex;
   flex-direction: column;
-  margin-left: 18%;
+  //margin-left: 18%;
 }
 
 .profile-container__header--img-one {
@@ -31,16 +32,16 @@
 .profile-container__header--img-two {
   height: 34px;
   width: 34px;
-  margin-left: 232%;
+  margin-left: 302%;
 }
 
 .profile-container__header--img-profile {
   display: flex;
   flex-direction: column;
   margin-top: 36px;
-  margin-left: 12%;
+  margin-left: 18%;
   @media screen and (max-width: 600px) {
-    margin-left: 40px;
+    margin-left: -26px;
   }
 }
 
@@ -66,11 +67,11 @@
 .profile-container__header-topic {
   display: flex;
   flex-direction: column;
-  margin-left: 32px;
+  margin-left: 60px;
   width: 28%;
   @media screen and (max-width: 600px) {
     width: 100%;
-    margin-left: 2px;
+    margin-left: -40px;
   }
 }
 
@@ -107,7 +108,7 @@
 .profile-container__header-img-circle {
   display: flex;
   flex-direction: column;
-  margin-left: 8%;
+  margin-left: 4%;
   margin-top: 60px;
   @media screen and (max-width: 600px) {
     margin-left: 34%;
@@ -150,7 +151,7 @@
 .profile-container__form-fill {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   @media screen and (max-width: 600px) {
     width: 100%;
     margin-right: 4px;
@@ -159,9 +160,11 @@
 
 
 .image {
-  width: 60%;
+  width: 62%;
+  margin-left: 24px;
   @media screen and (max-width: 600px) {
     width: 100%;
+    margin: 24px 0 ;
   }
 }
 

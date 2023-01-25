@@ -16,6 +16,7 @@ import {FaqComponent} from './faq/faq.component';
 import {FormComponent} from './form/form.component';
 import {FooterComponent} from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CdkAccordionModule} from "@angular/cdk/accordion";
 
 @NgModule({
   declarations: [
@@ -27,19 +28,20 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FormComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatDividerModule,
-    MatIconModule,
-    MatCardModule,
-    MatMenuModule,
-    MatInputModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatDividerModule,
+        MatIconModule,
+        MatCardModule,
+        MatMenuModule,
+        MatInputModule,
+        BrowserAnimationsModule,
+        CdkAccordionModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
