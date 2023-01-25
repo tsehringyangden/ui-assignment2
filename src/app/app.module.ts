@@ -16,7 +16,7 @@ import {FaqComponent} from './faq/faq.component';
 import {FormComponent} from './form/form.component';
 import {FooterComponent} from './footer/footer.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {CdkAccordionModule} from "@angular/cdk/accordion";
+import {CdkAccordionModule} from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
