@@ -129,13 +129,12 @@
           font-weight: 400;
         }
       }
-
       &-two {
         color: $Cerise;
         margin-left: 8px;
       }
     }
-    &-img--img {
+    &-img-img {
       height: 300px;
       margin-right: 116px;
       @media screen and (max-width: 600px) {
