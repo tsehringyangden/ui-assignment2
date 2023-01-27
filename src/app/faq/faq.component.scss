@@ -7,55 +7,48 @@
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-}
-
-.faq-container__header {
-  display: flex;
-  flex-direction: row;
-  margin-top: 48px;
-}
-
-
-.faq-container__header-title {
-  display: flex;
-  flex-direction: column;
-  margin-left: 26%;
-  @media screen and (max-width: 600px) {
-    margin-left: 10px;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 48px;
+    &-title {
+      display: flex;
+      flex-direction: column;
+      margin-left: 26%;
+      @media screen and (max-width: 600px) {
+        margin-left: 10px;
+      }
+      &-icon {
+        color: $Cerise;
+        margin-left: 32%;
+        margin-top: 8%;
+        @media screen and (max-width: 600px) {
+          margin-left: 32%;
+        }
+      }
+      &-topic {
+        font-size: 48px;
+        margin: 0;
+      }
+    }
+    &-icon-size {
+      font-size: 45px;
+      padding: 16px;
+      @media screen and (max-width: 600px) {
+        font-size: 30px;
+        padding: 4px;
+      }
+    }
   }
-}
-
-.faq-container__header-title-icon {
-  color: $Cerise;
-  margin-left: 32%;
-  margin-top: 8%;
-  @media screen and (max-width: 600px) {
-    margin-left: 32%;
-  }
-}
-
-.faq-container__header-title-topic {
-  font-size: 48px;
-  margin: 0;
-}
-
-.rental__icon-size {
-  font-size: 45px;
-  padding: 16px;
-  @media screen and (max-width: 600px) {
-    font-size: 30px;
-    padding: 4px;
-  }
-}
-
-.example-accordion {
-  display: block;
-  max-width: 60%;
-  margin-left: 16%;
-  margin-top: 38px;
-  @media screen and (max-width: 600px) {
-    max-width: 100%;
-    margin: 20px;
+  &-accordion {
+    display: block;
+    max-width: 60%;
+    margin-left: 16%;
+    margin-top: 38px;
+    @media screen and (max-width: 600px) {
+      max-width: 100%;
+      margin: 20px;
+    }
   }
 }
 
