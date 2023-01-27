@@ -1,7 +1,8 @@
+@import 'src/assets/styles/variables';
+
 .faq-container {
   display: flex;
   flex-direction: column;
-  //background-color: #FFFFFF;
   background-image: url('/assets/images/faq-bg.png');
   background-repeat: no-repeat;
   height: 100%;
@@ -25,7 +26,7 @@
 }
 
 .faq-container__header-title-icon {
-  color: #D7385E;
+  color: $Cerise;
   margin-left: 32%;
   margin-top: 8%;
   @media screen and (max-width: 600px) {
@@ -60,12 +61,8 @@
 
 .example-accordion-item {
   display: block;
-  border: solid 1px #ccc;
+  border: solid 1px $gray;
   margin-bottom: 16px;
-}
-
-.example-accordion-item + .example-accordion-item {
-  //border-top: none;
 }
 
 .example-accordion-item-header {
@@ -76,7 +73,7 @@
 
 .example-accordion-item-description {
   font-size: 0.85em;
-  color: #999;
+  color: $grayscale;
 }
 
 .example-accordion-item-header,
@@ -86,8 +83,8 @@
 
 .example-accordion-item-header:hover {
   cursor: pointer;
-  background-color: #D7385E;
-  color: white;
+  background-color: $Cerise;
+  color: $white;
 }
 
 .example-accordion-item:first-child {
@@ -103,6 +100,6 @@
   margin-left: 24px;
   font-size: 16px;
   font-weight: 400;
-  color: rgba(0,0,0,0.6);
+  color: $black-6;
 }
 

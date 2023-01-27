@@ -1,7 +1,9 @@
+@import 'src/assets/styles/variables';
+
 .rental-container {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: $white;
   @media screen and (max-width: 600px) {
     margin-left: 14px;
     margin-right: 14px;
@@ -19,7 +21,7 @@
 
 .rental-container__header-title {
   font-size: 48px;
-  color: rgba(0,0,0,0.87);
+  color: $black-87;
   @media screen and (max-width: 600px) {
     font-size: 42px;
   }
@@ -37,12 +39,12 @@
 }
 
 .rental-container__property-detail-titleColor {
-  color: #D7385E;
+  color: $Cerise;
   margin-left: 8px;
 }
 
 .rental-container__header-icon {
-  color: #D7385E;
+  color: $Cerise;
   margin-left: 10%;
   margin-top: 8%;
   @media screen and (max-width: 600px) {
@@ -72,7 +74,7 @@
 }
 
 .rental-container__property-detail--content:hover {
-  background-color: #FFBABA;
+  background-color: $pink;
 }
 
 .rental-container__property-detail--content-title {
@@ -80,7 +82,7 @@
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
-  color: rgba(0,0,0,0.64);
+  color: $black-64;
   @media screen and (max-width: 600px) {
     margin-left: 4px;
     font-size: 10px;
@@ -88,11 +90,11 @@
   }
 }
 .rental-container__property-detail--content-title:hover {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental-container__property-detail--content-icon:hover {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental-container__property-img--img {
@@ -140,7 +142,7 @@
 }
 
 .rental-container__manager-detail-titleColor {
-  color: #D7385E;
+  color: $Cerise;
   margin-left: 8px;
 }
 
@@ -164,7 +166,7 @@
 }
 
 .rental-container__manager-detail--content:hover {
-  background-color: #FFBABA;
+  background-color: $pink;
 }
 
 .rental-container__manager-detail--content-title {
@@ -180,11 +182,11 @@
   }
 }
 .rental-container__manager-detail--content-title:hover {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental-container__manager-detail--content-icon:hover {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental__icon-size {

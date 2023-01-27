@@ -1,7 +1,9 @@
+@import 'src/assets/styles/variables';
+
 .rental-container {
   display: flex;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: $white;
 }
 
 .rental-container__header {
@@ -14,7 +16,7 @@
 }
 
 .rental-container__header-icon {
-  color: #D7385E;
+  color: $Cerise;
   margin-left: 22%;
   margin-top: 8%;
 }
@@ -41,7 +43,7 @@
   display: flex;
   flex-direction: column;
   margin-left: 113px;
-  border: 2px solid rgb(245, 247, 246);
+  border: 2px solid $whitesmoke;
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
@@ -50,7 +52,7 @@
   }
 }
 .rental-container__rental-provider-topic {
-  background-color: #F5F5F5;
+  background-color: $whitesmoke;
   height: 16%;
   padding-bottom: 8px;
 }
@@ -58,7 +60,7 @@
 .rental-container__rental-provider-title {
   font-size: 20px;
   margin-left: 28px;
-  color: rgba(0,0,0,1);
+  color: $black-1;
 }
 
 .rental-container__rental-provider-container {
@@ -66,7 +68,6 @@
   flex-direction: column;
   width: 82%;
   @media screen and (max-width: 600px) {
-    //width: 22%;
   }
 }
 
@@ -77,7 +78,7 @@
 }
 
 .rental-container__rental-provider-container-detail--icon {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental-container__rental-provider-container-detail--position {
@@ -85,18 +86,18 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
-  color: rgba(0,0,0,0.6);
+  color: $black-6;
 }
 
 .rental-container__rental-provider-container-detail--description {
   margin-left: 30px;
-  color: rgba(0,0,0,0.6);
+  color: $black-6;
 }
 
 .rental-container__rental-new {
   display: flex;
   flex-direction: column;
-  border: 2px solid #D7385E;
+  border: 2px solid $Cerise;
   width: 38%;
   @media screen and (max-width: 600px) {
     width: 92%;
@@ -105,14 +106,14 @@
   }
 }
 .rental-container__rental-new-topic {
-  background-color: #D7385E;
+  background-color: $Cerise;
   height: 16%;
   padding-bottom: 8px;
 }
 
 .rental-container__rental-new-provider-title {
   font-size: 20px;
-  color: #FFFFFF;
+  color: $white;
   margin-left: 28px;
 }
 
@@ -129,7 +130,7 @@
 }
 
 .rental-container__rental-new-provider-container-detail--icon {
-  color: #D7385E;
+  color: $Cerise;
 }
 
 .rental-container__rental-new-provider-container-detail--position {
@@ -137,16 +138,16 @@
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 0;
-  color: rgba(0,0,0,0.6);
+  color: $black-6;
 }
 
 .rental-container__rental-new-provider-container-detail--description {
   margin-left: 30px;
-  color: rgba(0,0,0,0.6);
+  color: $black-6;
 }
 
 .bg-color {
-  background-color: #F5F5F5;
+  background-color: $whitesmoke;
   width: 100%;
   padding-bottom: 8px;
 }

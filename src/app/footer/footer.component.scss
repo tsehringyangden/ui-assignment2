@@ -1,3 +1,5 @@
+@import 'src/assets/styles/variables';
+
 .footer-container {
   background-image: url('/assets/images/bg-contact.svg');
   display: flex;
@@ -33,7 +35,7 @@
   margin-left: 4px;
   font-size: 22px;
   font-weight: 500;
-  color: #D4F1F4;
+  color: $oyster-bay;
 }
 
 .footer-container__header-question {
@@ -46,7 +48,7 @@
   font-size: 22px;
   font-weight: 400;
   margin-right: 40px;
-  color: #D4F1F4;
+  color: $oyster-bay;
   @media screen and (max-width: 600px) {
     font-size: 18px;
     font-weight: 300;
@@ -54,7 +56,7 @@
   }
 }
 button {
-  background-color: #D4F1F4;
+  background-color: $oyster-bay;
   @media screen and (max-width: 600px) {
     margin-right: 4px;
   }
@@ -85,14 +87,14 @@ button {
 .footer-container__content--about-us__topic {
   font-size: 18px;
   font-weight: 700;
-  color: #D4F1F4;
+  color: $oyster-bay;
 
 }
 
 .footer-container__content--about-us__detail {
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $white;
   width: 80%;
 }
 
@@ -105,14 +107,14 @@ button {
 .footer-container__content--quick-links__topic {
   font-size: 18px;
   font-weight: 700;
-  color: #D4F1F4;
+  color: $oyster-bay;
 
 }
 
 .footer-container__content--quick-links__list {
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $white;
 }
 
 .footer-container__content--contact {
@@ -146,18 +148,18 @@ button {
 }
 
 .footer-container__content--contact-address-icon {
-  color: #FFFFFF;
+  color: $white;
 }
 
 .footer-container__content--contact-address-location {
   font-size: 16px;
   font-weight: 400;
-  color: #FFFFFF;
+  color: $white;
   margin-left: 16px;
 }
 
 mat-label {
-  color: #D4F1F4;
+  color: $oyster-bay;
 }
 
 .footer-container__footer {
@@ -165,7 +167,7 @@ mat-label {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 60px;
-  color: #FFFFFF;
+  color: $white;
   margin-top: 8px;
   align-items: center;
 }
