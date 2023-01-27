@@ -8,170 +8,153 @@
     margin-left: 18px;
     margin-top: 0;
   }
-}
-
-.profile-container__header {
-  display: flex;
-  flex-direction: row;
-  margin-left: 14%;
-  @media screen and (max-width: 600px) {
+  &__header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: 14%;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+    }
+    &-img {
+      display: flex;
+      flex-direction: column;
+      &-one {
+        width: 74px;
+        height: 74px;
+        margin-top: 46px;
+      }
+
+      &-two {
+        height: 34px;
+        width: 34px;
+        margin-left: 302%;
+      }
+    }
+    &-profile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 36px;
+      margin-left: 18%;
+      @media screen and (max-width: 600px) {
+        margin-left: -26px;
+      }
+      &-name {
+        margin-left: 14px;
+        color: $Cerise;
+        font-size: 16px;
+        margin-bottom: 0;
+        @media screen and (max-width: 600px) {
+          margin-left: 32%;
+        }
+      }
+      &-designation {
+        font-size: 14px;
+        color: $black-5;
+        margin-top: 0;
+        @media screen and (max-width: 600px) {
+          margin-left: 28%;
+        }
+      }
+      &-image {
+        @media screen and (max-width: 600px) {
+          width: 62%;
+          margin-left: 40px;
+        }
+      }
+
+    }
+    &-topic {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      width: 28%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-left: -40px;
+      }
+      &-img {
+        height: 16px;
+        width: 16px;
+        margin-top: 2px;
+        @media screen and (max-width: 600px) {
+          margin-left: 60px;
+        }
+      }
+      &-title {
+        font-size: 48px;
+        margin-bottom: 0;
+        color: $Cerise;
+        margin-top: 14px;
+        @media screen and (max-width: 600px) {
+          font-size: 40px;
+          margin-left: 60px;
+        }
+      }
+      &-detail {
+        font-size: 24px;
+        margin-top: 0;
+        width: 68%;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          margin: 0 18px;
+        }
+      }
+    }
+    &-circle {
+      display: flex;
+      flex-direction: column;
+      margin-left: 4%;
+      margin-top: 60px;
+      @media screen and (max-width: 600px) {
+        margin-left: 34%;
+        margin-top: 8px;
+      }
+      &-one {
+        margin-left: 62%;
+        @media screen and (max-width: 600px) {
+          margin-left: 60px;
+          width: 32px;
+        }
+      }
+      &-two {
+        width: 60px;
+        @media screen and (max-width: 600px) {
+          margin-left: 0;
+          width: 60px;
+        }
+
+      }
+    }
   }
-}
-.profile-container__header--img {
-  display: flex;
-  flex-direction: column;
-}
-
-.profile-container__header--img-one {
-  width: 74px;
-  height: 74px;
-  margin-top: 46px;
-}
-
-.profile-container__header--img-two {
-  height: 34px;
-  width: 34px;
-  margin-left: 302%;
-}
-
-.profile-container__header--img-profile {
-  display: flex;
-  flex-direction: column;
-  margin-top: 36px;
-  margin-left: 18%;
-  @media screen and (max-width: 600px) {
-    margin-left: -26px;
-  }
-}
-
-.profile-container__header--img-profile-name {
-  margin-left: 14px;
-  color: $Cerise;
-  font-size: 16px;
-  margin-bottom: 0;
-  @media screen and (max-width: 600px) {
-    margin-left: 32%;
-  }
-}
-
-.profile-container__header--img-profile-designation {
-  font-size: 14px;
-  color: $black-5;
-  margin-top: 0;
-  @media screen and (max-width: 600px) {
-    margin-left: 28%;
-  }
-}
-
-.profile-container__header-topic {
-  display: flex;
-  flex-direction: column;
-  margin-left: 60px;
-  width: 28%;
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    margin-left: -40px;
-  }
-}
-
-.profile-container__header-topic-img {
-  height: 16px;
-  width: 16px;
-  margin-top: 2px;
-  @media screen and (max-width: 600px) {
-    margin-left: 60px;
-  }
-}
-
-.profile-container__header-topic-title {
-  font-size: 48px;
-  margin-bottom: 0;
-  color: $Cerise;
-  margin-top: 14px;
-  @media screen and (max-width: 600px) {
-    font-size: 40px;
-    margin-left: 60px;
-  }
-}
-
-.profile-container__header-topic-detail {
-  font-size: 24px;
-  margin-top: 0;
-  width: 68%;
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    margin: 0 18px;
-  }
-}
-
-.profile-container__header-img-circle {
-  display: flex;
-  flex-direction: column;
-  margin-left: 4%;
-  margin-top: 60px;
-  @media screen and (max-width: 600px) {
-    margin-left: 34%;
-    margin-top: 8px;
-  }
-
-}
-
-.profile-container__header-img-circle--one {
-  margin-left: 62%;
-  @media screen and (max-width: 600px) {
-    margin-left: 60px;
-    width: 32px;
-  }
-}
-
-.profile-container__header-img-circle--two {
-  width: 60px;
-  @media screen and (max-width: 600px) {
-    margin-left: 0;
-    width: 60px;
-  }
-
-}
-
-.profile-container__form {
-  display: flex;
-  flex-direction: row;
-  margin: 24px 60px;
-  padding: 0 60px;
-  justify-content: space-evenly;
-  @media screen and (max-width: 600px) {
+  &__form {
     display: flex;
-    flex-direction: column;
-    margin: 12px 0 0 0;
-    padding:0 4px;
-  }
-}
-
-.profile-container__form-fill {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    margin-right: 4px;
-  }
-}
-
-
-.image {
-  width: 62%;
-  margin-left: 24px;
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    margin: 24px 0 ;
-  }
-}
-
-.profile-image {
-  @media screen and (max-width: 600px) {
-    width: 62%;
-    margin-left: 40px;
+    flex-direction: row;
+    margin: 24px 60px;
+    padding: 0 60px;
+    justify-content: space-evenly;
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0 0 0;
+      padding:0 4px;
+    }
+    &-fill {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-right: 4px;
+      }
+    }
+    &-img {
+      width: 62%;
+      margin-left: 24px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 24px 0 ;
+      }
+    }
   }
 }
