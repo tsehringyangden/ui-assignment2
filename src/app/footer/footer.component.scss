@@ -1,15 +1,23 @@
 @import 'src/assets/styles/variables';
 
-.footer-container {
-  background-image: url('/assets/images/bg-contact.svg');
+.global-column {
   display: flex;
   flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
+  background-image: url('/assets/images/bg-contact.svg');
+  @extend .global-column;
   @media screen and (max-width: 600px) {
     width: 100%;
   }
   &__header {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     justify-content: space-between;
     margin-top: 48px;
     padding: 0 60px;
@@ -17,8 +25,7 @@
       padding: 0;
     }
     &-topic {
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
     }
     &-logo {
       width: 38px;
@@ -31,8 +38,7 @@
       color: $oyster-bay;
     }
     &-question {
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       &-tag {
         font-size: 22px;
         font-weight: 400;
@@ -50,8 +56,7 @@
     padding: 0 60px;
   }
   &__content {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     justify-content: space-between;
     margin-top: 48px;
     @media screen and (max-width: 600px) {
@@ -65,8 +70,7 @@
 
     }
     &--newsletter {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       padding: 0 60px;
       align-items: center;
     }
@@ -75,8 +79,7 @@
     }
   }
   &__about-us {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     padding: 0 60px;
     width: 24%;
     &_detail {
@@ -87,8 +90,7 @@
     }
   }
   &__quick {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     padding: 0 60px;
     &-list {
       font-size: 16px;
@@ -98,12 +100,10 @@
 
   }
   &__contact {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     padding: 0 60px;
     &-address{
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       align-items: center;
       &-icon {
         color: $white;
@@ -117,8 +117,7 @@
     }
   }
   &__footer {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     justify-content: space-between;
     padding: 0 60px;
     color: $white;

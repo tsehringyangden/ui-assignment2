@@ -1,12 +1,20 @@
 @import 'src/assets/styles/variables';
 
-.rental-container {
+.global-column {
   display: flex;
   flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-container {
+  @extend .global-column;
   background-color: $white;
   &__header {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     margin-left: 26%;
     @media screen and (max-width: 600px) {
       margin-left: 12%;
@@ -31,8 +39,7 @@
     }
   }
   &__content {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     margin-left: 4%;
     @media screen and (max-width: 600px) {
       display: flex;
@@ -40,8 +47,7 @@
       margin-left: 0;
     }
     &-provider {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       margin-left: 113px;
       border: 2px solid $whitesmoke;
       @media screen and (max-width: 600px) {
@@ -62,14 +68,12 @@
     }
   }
   &__list {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     width: 82%;
     @media screen and (max-width: 600px) {
     }
     &-detail {
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       align-items: center;
       &-icon {
         color: $cerise;
@@ -86,8 +90,7 @@
     }
   }
   &__new {
-    display: flex;
-    flex-direction: column;
+    @extend .global-column;
     border: 2px solid $cerise;
     width: 38%;
     @media screen and (max-width: 600px) {
@@ -105,12 +108,10 @@
       }
     }
     &-list {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       width: 82%;
       &-detail {
-        display: flex;
-        flex-direction: row;
+        @extend .global-row;
         align-items: center;
       }
       &-icon {

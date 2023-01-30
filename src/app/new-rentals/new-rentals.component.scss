@@ -1,7 +1,11 @@
 @import 'src/assets/styles/variables';
 
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
-  background-origin: unset;
   display: flex;
   flex-direction: column;
   &-cursor {
@@ -9,8 +13,7 @@
     color: $black-87;
   }
   &-header-container {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     width: 100%;
     height: 68px;
     border: 6px solid $ghost-white;
@@ -25,8 +28,7 @@
     }
     &__title {
       align-items: center;
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       color: $palevioletred;
       padding: 4px;
       &-topic {
@@ -35,15 +37,13 @@
     }
     &__menu {
       width: 100%;
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       justify-content: space-between;
       @media screen and (max-width: 600px) {
         display: none;
       }
       &-list {
-        display: flex;
-        flex-direction: row;
+        @extend .global-row;
         margin-left: 5%;
         place-content: stretch space-between;
         align-items: stretch;
@@ -52,8 +52,7 @@
       }
     }
     &__btn {
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       place-content: stretch space-between;
       width: 300px;
       padding: 6px;
@@ -62,7 +61,6 @@
   }
   &-home-container {
     background-image: url('/assets/images/car.png');
-    //background-size: cover;
     height: 450px;
     width: 100%;
     &__search {
@@ -74,8 +72,7 @@
       color: $cerise;
     }
     &__detail {
-      display: flex;
-      flex-direction: column;
+      @extend .container;
       align-items: center;
       width: 38%;
       font-weight: 700;
@@ -102,8 +99,7 @@
   }
   &-apartment-container {
     background-color: $white;
-    display: flex;
-    flex-direction: column;
+    @extend .container;
     &__icon {
       font-size: 45px;
       padding: 16px;
@@ -114,14 +110,13 @@
       }
     }
     &__symbol {
-      flex-direction: column;
+      @extend .container;
       margin-left: -10%;
       @media screen and (max-width: 600px){
         margin-left: -30%;
       }
       &-icon {
-        display: flex;
-        flex-direction: row;
+        @extend .global-row;
         margin-left: 48%;
         color: $palevioletred;
       }
@@ -135,7 +130,7 @@
     }
   }
   &-card {
-    flex-direction: column;
+    @extend .container;
     width: 100%;
     background-color: $white;
     &__icon {
@@ -152,8 +147,7 @@
       }
     }
     &__row {
-      display: flex;
-      flex-direction: row;
+      @extend .global-row;
       place-content: center space-between;
       align-items: center;
       margin: 24px 0;
@@ -205,8 +199,7 @@
           color: $black-87;
         }
         &-detail {
-          display: flex;
-          flex-direction: row;
+          @extend .global-row;
           align-items: center;
         }
         &-icon {
@@ -217,8 +210,7 @@
         }
         &-button {
           margin-top: 20px;
-          display: flex;
-          flex-direction: row;
+          @extend .global-row;
           align-items: center;
         }
       }

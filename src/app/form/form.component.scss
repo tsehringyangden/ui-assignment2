@@ -1,23 +1,30 @@
 @import 'src/assets/styles/variables';
 
-.profile-container {
+.global-column {
   display: flex;
   flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-container {
+  @extend .global-column;
   margin-top: 64px;
   @media screen and (max-width: 600px) {
     margin: 0 0 0 18px;
   }
   &__header {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     margin-left: 14%;
     @media screen and (max-width: 600px) {
       display: flex;
       flex-direction: column;
     }
     &-img {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       &-one {
         width: 74px;
         height: 74px;
@@ -30,8 +37,7 @@
       }
     }
     &-profile {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       margin: 36px 0 0 18%;
       @media screen and (max-width: 600px) {
         margin-left: -26px;
@@ -61,8 +67,7 @@
       }
     }
     &-topic {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       margin-left: 60px;
       width: 28%;
       @media screen and (max-width: 600px) {
@@ -97,8 +102,7 @@
       }
     }
     &-circle {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       margin: 60px 0 0 4%;
       @media screen and (max-width: 600px) {
         margin: 8px 0 0 34%;
@@ -121,8 +125,7 @@
     }
   }
   &__form {
-    display: flex;
-    flex-direction: row;
+    @extend .global-row;
     margin: 24px 60px;
     padding: 0 60px;
     justify-content: space-evenly;
@@ -133,8 +136,7 @@
       padding:0 4px;
     }
     &-fill {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       width: 40%;
       @media screen and (max-width: 600px) {
         width: 100%;

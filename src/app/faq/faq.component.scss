@@ -1,8 +1,12 @@
 @import 'src/assets/styles/variables';
 
-.faq-container {
+.global-column {
   display: flex;
   flex-direction: column;
+}
+
+.faq-container {
+  @extend .global-column;
   background-image: url('/assets/images/faq-bg.png');
   background-repeat: no-repeat;
   height: 100%;
@@ -12,8 +16,7 @@
     flex-direction: row;
     margin-top: 48px;
     &-title {
-      display: flex;
-      flex-direction: column;
+      @extend .global-column;
       margin-left: 26%;
       @media screen and (max-width: 600px) {
         margin-left: 10px;
