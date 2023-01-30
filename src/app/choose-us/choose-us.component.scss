@@ -12,9 +12,8 @@
       margin-left: 12%;
     }
     &-icon {
-      color: $Cerise;
-      margin-left: 22%;
-      margin-top: 8%;
+      color: $cerise;
+      margin: 8% 0 0 22%;
       &-size {
         font-size: 45px;
         padding: 16px;
@@ -48,8 +47,7 @@
       @media screen and (max-width: 600px) {
         display: flex;
         flex-direction: column;
-        margin-left: 14px;
-        margin-right: 14px;
+        margin: 0 14px;
       }
       &-topic {
         background-color: $whitesmoke;
@@ -74,13 +72,11 @@
       flex-direction: row;
       align-items: center;
       &-icon {
-        color: $Cerise;
+        color: $cerise;
       }
       &-position {
-        margin-left: 8px;
         font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin: 0 0 0 8px;
         color: $black-6;
       }
       &-description {
@@ -92,15 +88,14 @@
   &__new {
     display: flex;
     flex-direction: column;
-    border: 2px solid $Cerise;
+    border: 2px solid $cerise;
     width: 38%;
     @media screen and (max-width: 600px) {
       width: 92%;
-      margin-left: 14px;
-      margin-right: 14px;
+      margin: 0 14px;
     }
     &-topic {
-      background-color: $Cerise;
+      background-color: $cerise;
       height: 16%;
       padding-bottom: 8px;
       &-title {
@@ -119,13 +114,11 @@
         align-items: center;
       }
       &-icon {
-        color: $Cerise;
+        color: $cerise;
       }
       &-position {
-        margin-left: 8px;
+        margin: 0 0 0 8px;
         font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 0;
         color: $black-6;
       }
       &-description {
@@ -134,6 +127,9 @@
       }
     }
   }
+  &__category {
+    padding: 8px;
+  }
 }
 
 .bg-color {
@@ -141,4 +137,3 @@
   width: 100%;
   padding-bottom: 8px;
 }
-

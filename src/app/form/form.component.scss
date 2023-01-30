@@ -5,8 +5,7 @@
   flex-direction: column;
   margin-top: 64px;
   @media screen and (max-width: 600px) {
-    margin-left: 18px;
-    margin-top: 0;
+    margin: 0 0 0 18px;
   }
   &__header {
     display: flex;
@@ -33,14 +32,13 @@
     &-profile {
       display: flex;
       flex-direction: column;
-      margin-top: 36px;
-      margin-left: 18%;
+      margin: 36px 0 0 18%;
       @media screen and (max-width: 600px) {
         margin-left: -26px;
       }
       &-name {
         margin-left: 14px;
-        color: $Cerise;
+        color: $cerise;
         font-size: 16px;
         margin-bottom: 0;
         @media screen and (max-width: 600px) {
@@ -81,9 +79,8 @@
       }
       &-title {
         font-size: 48px;
-        margin-bottom: 0;
-        color: $Cerise;
-        margin-top: 14px;
+        color: $cerise;
+        margin: 14px 0 0 0;
         @media screen and (max-width: 600px) {
           font-size: 40px;
           margin-left: 60px;
@@ -102,11 +99,9 @@
     &-circle {
       display: flex;
       flex-direction: column;
-      margin-left: 4%;
-      margin-top: 60px;
+      margin: 60px 0 0 4%;
       @media screen and (max-width: 600px) {
-        margin-left: 34%;
-        margin-top: 8px;
+        margin: 8px 0 0 34%;
       }
       &-one {
         margin-left: 62%;

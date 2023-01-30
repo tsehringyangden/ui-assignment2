@@ -21,7 +21,7 @@
     &__img {
       width: 38px;
       height: 38px;
-      color: $Cerise;
+      color: $cerise;
     }
     &__title {
       align-items: center;
@@ -62,14 +62,16 @@
   }
   &-home-container {
     background-image: url('/assets/images/car.png');
+    //background-size: cover;
     height: 450px;
+    width: 100%;
     &__search {
-      background-color: $Cerise;
+      background-color: $cerise;
       cursor: pointer;
       color: $white;
     }
     &__place {
-      color: $Cerise;
+      color: $cerise;
     }
     &__detail {
       display: flex;
@@ -105,7 +107,7 @@
     &__icon {
       font-size: 45px;
       padding: 16px;
-      color: $Cerise;
+      color: $cerise;
       @media screen and (max-width: 600px){
         font-size: 30px;
         padding: 4px;
@@ -127,9 +129,8 @@
         margin-bottom: 20px;
       }
       &-title {
-        margin-left: 40%;
         font-size: 48px;
-        margin-top: 0;
+        margin: 0 0 0 40%;
       }
     }
   }
@@ -155,7 +156,7 @@
       flex-direction: row;
       place-content: center space-between;
       align-items: center;
-      margin-bottom: 24px;
+      margin: 24px 0;
       @media screen and (max-width: 600px) {
         display: flex;
         flex-direction: column;
@@ -179,13 +180,11 @@
       &-card{
         margin-left: 116px;
         @media screen and (max-width: 600px) {
-          margin-left: 4px;
-          margin-bottom: 10px;
+          margin: 0 0 10px 4px;
         }
         &-price {
           position: absolute;
-          margin-top: 8px;
-          margin-left: 16px;
+          margin: 8px 0 0 16px;
           background-color: $ball-blue;
           width: 35%;
           height: 32px;
@@ -194,14 +193,14 @@
         }
         &-nu {
           color: $white;
-          margin-top: 8px;
-          margin-left: 4px;
+          margin: 8px 0 0 4px;
           opacity: 1.5;
         }
       }
       &-content {
         flex-direction: row;
         margin-left: 24px;
+        line-height: 0.2px;
         &-title {
           color: $black-87;
         }
@@ -215,6 +214,12 @@
         }
         &-bookmark {
           margin-left: 4px;
+        }
+        &-button {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
         }
       }
       &-description {
@@ -235,3 +240,4 @@
 ::ng-deep.mat-mdc-form-field-flex {
   height: 50px !important;
 }
+
