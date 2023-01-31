@@ -1,29 +1,31 @@
  <div class="container">
-   <div  class="container-header-container">
+   <div  class="container-header-container global-row">
      <div class="container-header-container__title">
-       <mat-icon class="container-header-container__title-icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-       <h3>NewRentals</h3>
+       <img class="container-header-container__img" mat-card-image src="assets/images/logo.png" alt="image">
+       <h3 class="container-header-container__title-topic">NewRentals</h3>
      </div>
      <div class="container-header-container__menu">
-       <p>Rental Solution</p>
-       <p>Pricing</p>
-       <p>FAQs</p>
-       <p>Contact Us</p>
-     </div>
-     <div class="container-header-container__btn">
-       <p>Manage Tental</p>
-       <button class="btn" mat-stroked-button color="accent">Log In</button>
-       <button mat-raised-button color="accent">Sign Up</button>
+       <div class="container-header-container__menu-list">
+         <p class="container-cursor">Rental Solution</p>
+         <p class="container-cursor">Pricing</p>
+         <p class="container-cursor">FAQs</p>
+         <p class="container-cursor">Contact Us</p>
+       </div>
+       <div class="container-header-container__btn">
+         <p class="container-cursor">Manage Rental</p>
+         <button class="btn" mat-stroked-button color="accent">Log In</button>
+         <button mat-raised-button color="accent">Sign Up</button>
+       </div>
      </div>
    </div>
    <div class="container-home-container">
      <div class="container-home-container__detail">
-       <h3>There is nothing like staying at home for real comfort.</h3>
+       <h3 class="container-home-container__detail-title">There is nothing like staying at home for real comfort.</h3>
         <div class="container-home-container__searchbar">
-          <mat-form-field appearance="fill">
-            <mat-icon matPrefix class="my-place">place</mat-icon>
-            <mat-icon matSuffix class="my-search">search</mat-icon>
-            <input matInput placeholder="Search home by Location" class="helo"/>
+          <mat-form-field appearance="outline">
+            <mat-icon matPrefix class="container-home-container__place">place</mat-icon>
+            <mat-icon matSuffix class="container-home-container__search">search</mat-icon>
+            <input matInput placeholder="Search home by Location"/>
           </mat-form-field>
         </div>
      </div>
@@ -31,75 +33,81 @@
    <div class="container-apartment-container">
      <div class="container-apartment-container__symbol">
        <div class="container-apartment-container__symbol-icon">
-         <mat-icon>minimize</mat-icon>
-         <mat-icon class="container-apartment-container__symbol-icon-home" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
-         <mat-icon>minimize</mat-icon>
+         <mat-icon class="container-apartment-container__icon">minimize</mat-icon>
+         <mat-icon class="container-apartment-container__symbol-home container-apartment-container__icon" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+         <mat-icon class="container-apartment-container__icon">minimize</mat-icon>
        </div>
        <h2 class="container-apartment-container__symbol-title">Featured Apartments</h2>
      </div>
    </div>
    <div class="container-card">
      <div class="container-card__row">
-       <mat-card class="example-card">
-         <img mat-card-image  src="assets/images/img1.jpeg" alt="Image">
-         <div class="example-card__price">
-           <p class="example-card__price-Nu">Nu. 9000/Month</p>
+       <mat-card class="container-card__row-card">
+         <img class="container-card__img" mat-card-image  src="assets/images/img1.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
          </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
-             <div>
-               <mat-icon class="container-card__row-content-icon"> place</mat-icon>
-             </div>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <mat-icon class="container-card__row-content-icon"> place</mat-icon>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+           <div class="container-card__row-content-button">
+             <button class="container-card__row-btn" mat-stroked-button color="accent">Apply for Tenant
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
-             <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
+             <div>
+               <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
+             </div>
            </div>
          </mat-card-content>
        </mat-card>
        <mat-card>
-         <img mat-card-image src="assets/images/img2.jpeg" alt="Image">
+         <img class="container-card__img" mat-card-image src="assets/images/img2.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
+         </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
-             <mat-icon> place</mat-icon>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <mat-icon class="container-card__icon">place</mat-icon>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+           <div class="container-card__row-content-button">
+             <button mat-stroked-button color="accent" class="container-card__row-btn">Apply for Tenant
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
              <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
            </div>
          </mat-card-content>
        </mat-card>
-       <mat-card class="img-card">
-         <img mat-card-image src="assets/images/img3.jpeg" alt="Image">
+       <mat-card class="container-card__row-img">
+         <img class="container-card__img" mat-card-image src="assets/images/img3.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
+         </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
-             <mat-icon> place</mat-icon>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <mat-icon class="container-card__icon"> place</mat-icon>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+           <div class="container-card__row-content-button">
+             <button mat-stroked-button color="accent" class="container-card__row-btn">Apply for Tenant
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
              <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
            </div>
@@ -107,64 +115,73 @@
        </mat-card>
      </div>
      <div class="container-card__row">
-       <mat-card class="example-card">
-         <img mat-card-image src="assets/images/img4.jpeg" alt="Image">
+       <mat-card class="container-card__row-card">
+         <img class="container-card__img" mat-card-image src="assets/images/img4.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
+         </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
              <div>
                <mat-icon class="container-card__row-content-icon"> place</mat-icon>
              </div>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+           <div class="container-card__row-content-button">
+             <button mat-stroked-button color="accent" class="container-card__row-btn">Apply for Tenant
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
              <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
            </div>
          </mat-card-content>
        </mat-card>
        <mat-card>
-         <img mat-card-image src="assets/images/img5.jpeg" alt="Image">
+         <img class="container-card__img" mat-card-image src="assets/images/img5.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
+         </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
-             <mat-icon> place</mat-icon>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <mat-icon class="container-card__icon"> place</mat-icon>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+           <div class="container-card__row-content-button">
+             <button mat-stroked-button color="accent" class="container-card__row-btn">Apply for Tenant
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
              <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
            </div>
          </mat-card-content>
        </mat-card>
-       <mat-card class="img-card">
-         <img mat-card-image src="assets/images/img6.jpeg" alt="Image">
+       <mat-card class="container-card__row-img">
+         <img class="container-card__img" mat-card-image src="assets/images/img6.jpeg" alt="Image">
+         <div class="container-card__row-card-price">
+           <p class="container-card__row-card-nu">Nu. 9000/Month</p>
+         </div>
          <mat-card-content class="container-card__row-content">
-           <h4>Empty Room In Babesa</h4>
+           <h4 class="container-card__row-content-title">Empty Room In Babesa</h4>
            <div class="container-card__row-content-detail">
-             <mat-icon> place</mat-icon>
-             <p class="container-card__row-content-detail-description">Babesa, Highway Express, Thimphu</p>
+             <mat-icon class="container-card__icon"> place</mat-icon>
+             <p class="container-card__row-description">Babesa, Highway Express, Thimphu</p>
            </div>
            <div class="container-card__row-content-detail">
-             <mat-icon>share</mat-icon>
-             <p class="container-card__row-content-detail-description">3 BeedRoom, 2 Toilets</p>
+             <mat-icon class="container-card__icon">share</mat-icon>
+             <p class="container-card__row-description">3 BeedRoom, 2 Toilets</p>
            </div>
-           <div class="container-card__row-content-detail">
-             <button mat-stroked-button color="accent">
+           <div class="container-card__row-content-button">
+             <button mat-stroked-button color="accent" class="container-card__row-btn">
                Apply for Tenant
-               <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+               <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
              </button>
              <mat-icon class="container-card__row-content-bookmark">bookmark_border</mat-icon>
            </div>
@@ -173,7 +190,7 @@
      </div>
      <div class="container-home-container__button">
        <button mat-stroked-button color="accent">DISCOVER ALL
-         <span><mat-icon class="container-card__row-content-detail-icon">keyboard_arrow_right</mat-icon></span>
+         <span><mat-icon class="container-card__row-icon">keyboard_arrow_right</mat-icon></span>
        </button>
      </div>
    </div>

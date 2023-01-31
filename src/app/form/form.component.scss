@@ -1,0 +1,152 @@
+@import 'src/assets/styles/variables';
+
+.global-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-container {
+  @extend .global-column;
+  margin-top: 64px;
+  @media screen and (max-width: 600px) {
+    margin: 0 0 0 18px;
+  }
+  &__header {
+    @extend .global-row;
+    margin-left: 14%;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+    &-img {
+      @extend .global-column;
+      &-one {
+        width: 74px;
+        height: 74px;
+        margin-top: 46px;
+      }
+      &-two {
+        height: 34px;
+        width: 34px;
+        margin-left: 302%;
+      }
+    }
+    &-profile {
+      @extend .global-column;
+      margin: 36px 0 0 18%;
+      @media screen and (max-width: 600px) {
+        margin-left: -26px;
+      }
+      &-name {
+        margin-left: 14px;
+        color: $cerise;
+        font-size: 16px;
+        margin-bottom: 0;
+        @media screen and (max-width: 600px) {
+          margin-left: 32%;
+        }
+      }
+      &-designation {
+        font-size: 14px;
+        color: $black-5;
+        margin-top: 0;
+        @media screen and (max-width: 600px) {
+          margin-left: 28%;
+        }
+      }
+      &-image {
+        @media screen and (max-width: 600px) {
+          width: 62%;
+          margin-left: 40px;
+        }
+      }
+    }
+    &-topic {
+      @extend .global-column;
+      margin-left: 60px;
+      width: 28%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-left: -40px;
+      }
+      &-img {
+        height: 16px;
+        width: 16px;
+        margin-top: 2px;
+        @media screen and (max-width: 600px) {
+          margin-left: 60px;
+        }
+      }
+      &-title {
+        font-size: 48px;
+        color: $cerise;
+        margin: 14px 0 0 0;
+        @media screen and (max-width: 600px) {
+          font-size: 40px;
+          margin-left: 60px;
+        }
+      }
+      &-detail {
+        font-size: 24px;
+        margin-top: 0;
+        width: 68%;
+        @media screen and (max-width: 600px) {
+          width: 100%;
+          margin: 0 18px;
+        }
+      }
+    }
+    &-circle {
+      @extend .global-column;
+      margin: 60px 0 0 4%;
+      @media screen and (max-width: 600px) {
+        margin: 8px 0 0 34%;
+      }
+      &-one {
+        margin-left: 62%;
+        @media screen and (max-width: 600px) {
+          margin-left: 60px;
+          width: 32px;
+        }
+      }
+      &-two {
+        width: 60px;
+        @media screen and (max-width: 600px) {
+          margin-left: 0;
+        }
+
+      }
+    }
+  }
+  &__form {
+    @extend .global-row;
+    margin: 24px 60px;
+    padding: 0 60px;
+    justify-content: space-evenly;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      margin: 12px 0 0 0;
+      padding:0 4px;
+    }
+    &-fill {
+      @extend .global-column;
+      width: 40%;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-right: 4px;
+      }
+    }
+    &-img {
+      width: 62%;
+      margin-left: 24px;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        margin: 24px 0 ;
+      }
+    }
+  }
+}

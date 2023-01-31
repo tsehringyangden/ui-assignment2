@@ -1,0 +1,38 @@
+<div class="faq-container global-column">
+  <div class="faq-container__header">
+    <div class="faq-container__header-title">
+      <div class="faq-container__header-title-icon">
+        <mat-icon class="faq-container__header-icon-size">minimize</mat-icon>
+        <mat-icon class="faq-container__header-icon-size" aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+        <mat-icon class="faq-container__header-icon-size">minimize</mat-icon>
+      </div>
+      <h2 class="faq-container__header-title-topic">Frequently Asked Questions</h2>
+    </div>
+  </div>
+  <cdk-accordion class="faq-container-accordion">
+    <cdk-accordion-item
+      *ngFor="let item of items; let index = index;"
+        #accordionItem="cdkAccordionItem"
+        class="example-accordion-item"
+        role="button"
+        tabindex="0"
+        [attr.id]="'accordion-header-' + index"
+        [attr.aria-expanded]="accordionItem.expanded"
+        [attr.aria-controls]="'accordion-body-' + index">
+        <div class="example-accordion-item-header" (click)="accordionItem.toggle()">
+          {{ item }}
+        <span class="example-accordion-item-description">
+          <mat-icon>{{ accordionItem.expanded ? 'expand_less' : 'expand_more' }}</mat-icon>
+        </span>
+        </div>
+        <div
+          class="example-accordion-item-body example-accordion-answer"
+          role="region"
+          [style.display]="accordionItem.expanded ? '' : 'none'"
+          [attr.id]="'accordion-body-' + index"
+          [attr.aria-labelledby]="'accordion-header-' + index">
+          With the aid of crowdfunding websites, regular individuals can invest in startups. Startup investing platforms provide a selected list of businesses and startup ideas.
+        </div>
+    </cdk-accordion-item>
+  </cdk-accordion>
+</div>

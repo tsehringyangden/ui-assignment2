@@ -1,0 +1,173 @@
+@import 'src/assets/styles/variables';
+
+.global-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-container {
+  @extend .global-column;
+  background-color: $white;
+  @media screen and (max-width: 600px) {
+    margin: 0 14px;
+  }
+  &__header {
+    @extend .global-column;
+    margin-left: 36%;
+    @media screen and (max-width: 600px) {
+      margin-left: 8%;
+    }
+    &-title {
+      font-size: 48px;
+      color: $black-87;
+      @media screen and (max-width: 600px) {
+        font-size: 42px;
+      }
+    }
+    &-icon {
+      color: $cerise;
+      margin: 8% 0 0 10%;
+      @media screen and (max-width: 600px) {
+        margin-left: 28%;
+      }
+      &-size {
+        font-size: 45px;
+        padding: 16px;
+        @media screen and (max-width: 600px) {
+          font-size: 30px;
+          padding: 4px;
+        }
+      }
+    }
+  }
+  &__property {
+    @extend .global-row;
+    justify-content: space-between;
+    &__title {
+      @extend .global-column;
+      margin-left: 116px;
+      @media screen and (max-width: 600px) {
+        margin-left: 4px;
+      }
+      &-one {
+        @extend .global-row;
+        font-size: 24px;
+        font-weight: 700;
+        @media screen and (max-width: 600px) {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      &-two {
+        color: $cerise;
+        margin-left: 8px;
+      }
+    }
+    &-content {
+      @extend .global-row;
+      align-items: center;
+      &-title {
+        margin-left: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        color: $black-64;
+        @media screen and (max-width: 600px) {
+          margin-left: 4px;
+          font-size: 10px;
+          font-weight: 200;
+        }
+      }
+      &-title:hover {
+        color: $cerise;
+      }
+      &-icon:hover {
+        color: $cerise;
+      }
+    }
+    &-content:hover {
+      background-color: $pink;
+    }
+    &-img-img {
+      height: 300px;
+      margin-right: 116px;
+      @media screen and (max-width: 600px) {
+        height: 178px;
+        width: 200px;
+      }
+    }
+  }
+  &__manager {
+    @extend .global-row;
+    justify-content: space-between;
+    &-img {
+      @extend .global-column;
+      margin-left: 116px;
+      @media screen and (max-width: 600px) {
+        margin-left: 0;
+      }
+    }
+    &-title {
+      @extend .global-column;
+      margin-right: 250px;
+      @media screen and (max-width: 600px) {
+        margin-right: 12px;
+      }
+      &-one {
+        @extend .global-row;
+        font-size: 24px;
+        font-weight: 700;
+        @media screen and (max-width: 600px) {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      &-two {
+        color: $cerise;
+        margin-left: 8px;
+      }
+    }
+    &-img-img {
+      height: 300px;
+      margin-right: 116px;
+      @media screen and (max-width: 600px) {
+        height: 178px;
+        width: 200px;
+        margin-right: -54px;
+      }
+    }
+    &-content {
+      @extend .global-row;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        margin-left: 32px;
+      }
+      &-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 16px;
+        cursor: pointer;
+        color: rgba(0,0,0,0.64);
+        @media screen and (max-width: 600px) {
+          font-size: 10px;
+          font-weight: 200;
+          margin-left: 4px;
+        }
+      }
+      &-title:hover {
+        color: $cerise;
+      }
+      &-icon:hover {
+        color: $cerise;
+      }
+    }
+    &-content:hover {
+      background-color: $pink;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+@import 'src/assets/styles/variables';
+
+.global-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.rental-container {
+  @extend .global-column;
+  background-color: $white;
+  &__header {
+    @extend .global-column;
+    margin-left: 26%;
+    @media screen and (max-width: 600px) {
+      margin-left: 12%;
+    }
+    &-icon {
+      color: $cerise;
+      margin: 8% 0 0 22%;
+      &-size {
+        font-size: 45px;
+        padding: 16px;
+        @media screen and (max-width: 600px) {
+          font-size: 30px;
+          padding: 4px;
+        }
+      }
+    }
+    &-text {
+      font-size: 48px;
+      @media screen and (max-width: 600px) {
+        font-size: 48px;
+      }
+    }
+  }
+  &__content {
+    @extend .global-row;
+    margin-left: 4%;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      margin-left: 0;
+    }
+    &-provider {
+      @extend .global-column;
+      margin-left: 113px;
+      border: 2px solid $whitesmoke;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        margin: 0 14px;
+      }
+      &-topic {
+        background-color: $whitesmoke;
+        height: 16%;
+        padding-bottom: 8px;
+      }
+      &-title {
+        font-size: 20px;
+        margin-left: 28px;
+        color: $black;
+      }
+    }
+  }
+  &__list {
+    @extend .global-column;
+    width: 82%;
+    @media screen and (max-width: 600px) {
+    }
+    &-detail {
+      @extend .global-row;
+      align-items: center;
+      &-icon {
+        color: $cerise;
+      }
+      &-position {
+        font-size: 18px;
+        margin: 0 0 0 8px;
+        color: $black-6;
+      }
+      &-description {
+        margin-left: 30px;
+        color: $black-6;
+      }
+    }
+  }
+  &__new {
+    @extend .global-column;
+    border: 2px solid $cerise;
+    width: 38%;
+    @media screen and (max-width: 600px) {
+      width: 92%;
+      margin: 0 14px;
+    }
+    &-topic {
+      background-color: $cerise;
+      height: 16%;
+      padding-bottom: 8px;
+      &-title {
+        font-size: 20px;
+        color: $white;
+        margin-left: 28px;
+      }
+    }
+    &-list {
+      @extend .global-column;
+      width: 82%;
+      &-detail {
+        @extend .global-row;
+        align-items: center;
+      }
+      &-icon {
+        color: $cerise;
+      }
+      &-position {
+        margin: 0 0 0 8px;
+        font-size: 18px;
+        color: $black-6;
+      }
+      &-description {
+        margin-left: 30px;
+        color: $black-6;
+      }
+    }
+  }
+  &__category {
+    padding: 8px;
+  }
+}
+
+.bg-color {
+  background-color: $whitesmoke;
+  width: 100%;
+  padding-bottom: 8px;
+}

@@ -1,0 +1,142 @@
+@import 'src/assets/styles/variables';
+
+.global-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.global-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-container {
+  background-image: url('/assets/images/bg-contact.svg');
+  @extend .global-column;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+  &__header {
+    @extend .global-row;
+    justify-content: space-between;
+    margin-top: 48px;
+    padding: 0 60px;
+    @media screen and (max-width: 600px) {
+      padding: 0;
+    }
+    &-topic {
+      @extend .global-row;
+    }
+    &-logo {
+      width: 38px;
+      height: 38px;
+    }
+    &-title {
+      margin: 10px 0 0 4px;
+      font-size: 22px;
+      font-weight: 500;
+      color: $oyster-bay;
+    }
+    &-question {
+      @extend .global-row;
+      &-tag {
+        font-size: 22px;
+        font-weight: 400;
+        margin: 2px 40px 0 0;
+        color: $oyster-bay;
+        @media screen and (max-width: 600px) {
+          font-size: 18px;
+          font-weight: 300;
+          margin-left: 18px;
+        }
+      }
+    }
+  }
+  &__first-line {
+    padding: 0 60px;
+  }
+  &__content {
+    @extend .global-row;
+    justify-content: space-between;
+    margin-top: 48px;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+    &_topic {
+      font-size: 18px;
+      font-weight: 700;
+      color: $oyster-bay;
+
+    }
+    &--newsletter {
+      @extend .global-column;
+      padding: 0 60px;
+      align-items: center;
+    }
+    &_input {
+      color: $oyster-bay;
+    }
+  }
+  &__about-us {
+    @extend .global-column;
+    padding: 0 60px;
+    width: 24%;
+    &_detail {
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+      width: 80%;
+    }
+  }
+  &__quick {
+    @extend .global-column;
+    padding: 0 60px;
+    &-list {
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+    }
+
+  }
+  &__contact {
+    @extend .global-column;
+    padding: 0 60px;
+    &-address{
+      @extend .global-row;
+      align-items: center;
+      &-icon {
+        color: $white;
+      }
+      &-location {
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        margin-left: 16px;
+      }
+    }
+  }
+  &__footer {
+    @extend .global-row;
+    justify-content: space-between;
+    padding: 0 60px;
+    color: $white;
+    margin-top: 8px;
+    align-items: center;
+    @media screen and (max-width: 600px){
+      padding: 0 16px;
+    }
+    &-icon {
+      padding: 0 8px;
+      @media screen and (max-width: 600px) {
+        padding: 0;
+        flex-direction: row;
+      }
+    }
+  }
+  &__btn {
+    background-color: $oyster-bay;
+    @media screen and (max-width: 600px) {
+      margin-right: 4px;
+    }
+  }
+}
