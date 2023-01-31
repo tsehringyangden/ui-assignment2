@@ -44,7 +44,7 @@
       }
       &-list {
         @extend .global-row;
-        margin-left: 5%;
+        margin-left: 60px;
         place-content: stretch space-between;
         align-items: stretch;
         width: 300px;
@@ -79,7 +79,7 @@
       padding: 0 60px;
       &-title {
         font-size: 40px;
-        margin-top: 30%;
+        margin-top: 192px;
         @media screen and (max-width: 600px) {
           font-size: 14px;
         }
@@ -92,9 +92,9 @@
       }
     }
     &__button {
-      margin-left: 45%;
+      margin-left: 562px;
       @media screen and (max-width: 600px) {
-        margin-left: 28%;
+        margin-left: 100px;
       }
     }
   }
@@ -112,21 +112,24 @@
     }
     &__symbol {
       @extend .container;
-      margin-left: -10%;
+      margin-left: -130px;
       @media screen and (max-width: 600px){
-        margin-left: -30%;
+        margin-left: -114px;
       }
       &-icon {
         @extend .global-row;
-        margin-left: 48%;
+        margin-left: 698px;
         color: $palevioletred;
+        @media screen and (max-width: 600px) {
+          margin-left: 242px;
+        }
       }
       &-home {
         margin-bottom: 20px;
       }
       &-title {
         font-size: 48px;
-        margin: 0 0 0 40%;
+        margin: 0 0 0 590px;
       }
     }
   }
