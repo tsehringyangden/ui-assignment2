@@ -20,7 +20,6 @@
     @extend .global-row;
     margin-left: 14%;
     @media screen and (max-width: 600px) {
-      display: flex;
       flex-direction: column;
     }
     &-img {
@@ -118,7 +117,6 @@
         width: 60px;
         @media screen and (max-width: 600px) {
           margin-left: 0;
-          width: 60px;
         }
 
       }
@@ -130,7 +128,6 @@
     padding: 0 60px;
     justify-content: space-evenly;
     @media screen and (max-width: 600px) {
-      display: flex;
       flex-direction: column;
       margin: 12px 0 0 0;
       padding:0 4px;
